@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+  </head>
+
+  <body>
+
+
+<!-- multistep form -->
+<form action="" id="msform">
+  <!-- progressbar -->
+  <ul id="progressbar">
+    <li class="active">Size</li>
+    <li>Crust</li>
+    <li>Sauce</li>
+    <li>Toppings</li>
+    <li>Order Summary</li>
+  </ul>
+
+  <!-- fieldsets -->
+  <fieldset class="step-one">
+    <h2 class="fs-title">Size</h2>
+    <h3 class="fs-subtitle">Select your pie size.</h3>
+    <div>
+      <input type="radio" id="personalSize" name="size" value="personal"/>
+      <label for="personalSize">Personal</label>
+    </div>
+    <div>
+      <input type="radio" id="mediumSize" name="size" value="medium"/>
+      <label for="mediumSize">Medium</label>
+    </div>
+    <div>
+      <input type="radio" id="largeSize" name="size" value="large"/>
+      <label for="largeSize">Large</label>
+    </div>
+    <div>
+      <input type="radio" id="xlargeSize" name="size" value="xlarge"/>
+      <label for="xlargeSize">Extra Large</label>
+    </div>
+    <input type="button" name="next" class="next action-button" value="Next" />
+  </fieldset>
+
+  <fieldset class="step-two">
+    <h2 class="fs-title">Crust</h2>
+    <h3 class="fs-subtitle">Select your crust.</h3>
+    <div>
+      <input type="radio" id="plainCrust" name="crust" value="plain"/>
+      <label for="plainCrust">Plain</label>
+    </div>
+    <div>
+      <input type="radio" id="garlicCrust" name="crust" value="garlic"/>
+      <label for="garlicCrust">Garlic</label>
+    </div>
+    <div>
+      <input type="radio" id="stuffedCrust" name="crust" value="stuffed"/>
+      <label for="stuffedCrust">Stuffed</label>
+    </div>
+    <div>
+      <input type="radio" id="spicyCrust" name="crust" value="spicy"/>
+      <label for="spicyCrust">Spicy</label>
+    </div>
+    <div>
+      <input type="radio" id="specialCrust" name="crust" value="special"/>
+      <label for="specialCrust">Special</label>
+    </div>
+    <input type="button" name="previous" class="previous action-button" value="Previous" />
+    <input type="button" name="next" class="next action-button" value="Next" />
+  </fieldset>
+
+  <fieldset class="step-two">
+    <h2 class="fs-title">Sauce</h2>
+    <h3 class="fs-subtitle">Select your sauce.</h3>
+    <div>
+      <input type="radio" id="marinaraSauce" name="sauce" value="marinara"/>
+      <label for="marinaraSauce">Marinara Sauce</label>
+    </div>
+    <div>
+      <input type="radio" id="whiteSauce" name="sauce" value="white"/>
+      <label for="whiteSauce">White Sauce</label>
+    </div>
+    <div>
+      <input type="radio" id="bbqSauce" name="sauce" value="bbq"/>
+      <label for="bbqSauce">Barbeque Sauce</label>
+    </div>
+    <div>
+      <input type="radio" id="noSauce" name="sauce" value="none"/>
+      <label for="noSauce">No Sauce</label>
+    </div>
+    <input type="button" name="previous" class="previous action-button" value="Previous" />
+    <input type="button" name="next" class="next action-button" value="Next" />
+  </fieldset>
+
+  <fieldset class="step-three">
+    <h2 class="fs-title">Toppings</h2>
+    <div class="carnivores col-md-4">
+      <h3 class="fs-subtitle">For the carnivores.</h3>
+      <div>
+        <input type="checkbox" id="pepperoniMeat" name="meat" value="pepperoni"/>
+        <label for="pepperoniMeat">Pepperoni</label>
+      </div>
+      <div>
+        <input type="checkbox" id="sausageMeat" name="meat" value="sausage"/>
+        <label for="sausageMeat">Sausage</label>
+      </div>
+      <div>
+        <input type="checkbox" id="cbaconMeat" name="meat" value="cbacon"/>
+        <label for="cbaconMeat">Canadian Bacon</label>
+      </div>
+      <div>
+        <input type="checkbox" id="gbeefMeat" name="meat" value="gbeef"/>
+        <label for="gbeefMeat">Ground Beef</label>
+      </div>
+      <div>
+        <input type="checkbox" id="anchovyMeat" name="meat" value="anchovy"/>
+        <label for="anchovyMeat">Anchovy</label>
+      </div>
+      <div>
+        <input type="checkbox" id="chickenMeat" name="meat" value="chicken"/>
+        <label for="chickenMeat">Chicken</label>
+      </div>
+    </div>
+    <div class="herbivores col-md-4">
+      <h3 class="fs-subtitle">For the herbivores.</h3>
+      <div>
+        <input type="checkbox" id="tomatoVeggies" name="veggies" value="tomatoes"/>
+        <label for="tomatoVeggies">Tomatoes</label>
+      </div>
+      <div>
+        <input type="checkbox" id="onionsVeggies" name="veggies" value="onions"/>
+        <label for="onionsVeggies">Onions</label>
+      </div>
+      <div>
+        <input type="checkbox" id="olivesVeggies" name="veggies" value="olives"/>
+        <label for="olivesVeggies">Olives</label>
+      </div>
+      <div>
+        <input type="checkbox" id="gpeppersVeggies" name="veggies" value="gpeppers"/>
+        <label for="gpeppersVeggies">Green Peppers</label>
+      </div>
+      <div>
+        <input type="checkbox" id="mushroomsVeggies" name="veggies" value="mushrooms"/>
+        <label for="mushroomsVeggies">Mushrooms</label>
+      </div>
+      <div>
+        <input type="checkbox" id="pineappleVeggies" name="veggies" value="pineapple"/>
+        <label for="pineappleVeggies">Pineapple</label>
+      </div>
+      <div>
+        <input type="checkbox" id="spinachVeggies" name="veggies" value="spinach"/>
+        <label for="spinachVeggies">Spinach</label>
+      </div>
+      <div>
+        <input type="checkbox" id="jalapenoVeggies" name="veggies" value="jalapeno"/>
+        <label for="jalapenoVeggies">Jalapeno</label>
+      </div>
+    </div>
+    <div class="cheese col-md-4">
+      <h3 class="fs-subtitle">Feelin' cheesy?</h3>
+      <div>
+        <input type="radio" id="regularCheese" name="cheese" value="regular"/>
+        <label for="regularCheese">Regular</label>
+      </div>
+      <div>
+        <input type="radio" id="noCheese" name="cheese" value="none"/>
+        <label for="noCheese">No Cheese</label>
+      </div>
+      <div>
+        <input type="radio" id="extraCheese" name="cheese" value="extra"/>
+        <label for="extraCheese">Extra Cheese</label>
+      </div>
+    </div>
+    <input type="button" name="previous" class="previous action-button" value="Previous" />
+    <input type="button" name="next" class="next action-button" value="Next" />
+  </fieldset>
+
+  <fieldset class="step-four">
+    <h2 class="fs-title">Order Summary</h2>
+    <h3 class="fs-subtitle">Verify your order.</h3>
+    <input type="text" name="fname" placeholder="First Name" />
+    <input type="text" name="lname" placeholder="Last Name" />
+    <input type="text" name="phone" placeholder="Phone" />
+    <textarea name="address" placeholder="Address"></textarea>
+    <input type="button" name="previous" class="previous action-button" value="Previous" />
+    <input type="submit" name="submit" class="submit action-button" value="Submit" />
+  </fieldset>
+
+</form>
+
+
+  <!-- End -->
+
+
+  <!-- jQuery first, then Tether, then Bootstrap JS. -->
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/formscript.js"></script>
+
+  </body>
+
+</html>
